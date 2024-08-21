@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import pickle
 import numpy as np
 
-model = pickle.load(open('iris_model.pkl', 'rb'))
+model = pickle.load(open('Saved Model/iris_model.pkl', 'rb'))
 app = fastapi.FastAPI()
 
 class Input(BaseModel):
